@@ -293,43 +293,8 @@ A smoothing technique is applied to reduce cursor shaking and improve accuracy.
 Add your project demo GIF/video here:
 
 ```
-![Demo](demo.gif)
+loading soon
 ```
 
 ---
 
-# 🤝 Contributing
-
-Contributions are welcome.
-
-Steps:
-
-1. Fork the repository
-2. Create a new branch
-
-```bash
-git checkout -b feature-name
-```
-
-3. Make your changes
-4. Commit changes
-
-```bash
-git commit -m "Add new feature"
-```
-
-5. Push changes
-
-```bash
-git push origin feature-name
-```
-
-6. Create a Pull Request
-
----
-
-# 📜 License
-
-This project is licensed under the MIT License.
-
----
