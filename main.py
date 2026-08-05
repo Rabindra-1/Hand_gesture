@@ -24,6 +24,8 @@ click_times=[]
 click_cooldown = 0.5
 scroll_mode = False
 freeze_cursor = False
+screenshot_cooldown = 2
+last_screenshot_time = 0
 
 
 if not cap.isOpened():
@@ -81,7 +83,17 @@ while True:
 
             pyautogui.moveTo(curr_screen_x, curr_screen_y)
             prev_screen_x, prev_screen_y = curr_screen_x, curr_screen_y
-            
+
+
+
+        # Screen shot
+        if sum(fingers) == 0:
+            current_time = time.time()
+            if current_time - last_screenshot_time > screenshot_cooldown:
+                pyautogui.screenshot('screenshot.png')
+                cv2.putText(frame, 'Screenshot Taken', (10, 100), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 255), 2)
+                last_screenshot_time = current_time
+
 
 
 
